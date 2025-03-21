@@ -42,14 +42,14 @@ footprink() {
     fi
 }
 
-      # echo " recherche  en cours pour : $Domaine"
+       echo " Collecte d'informations sur $Domaine"
        echo "  -----------------------------------------------------"
        printf "| %-15s | %-50s  | \n" "Test" "description"
        echo "  -----------------------------------------------------"
 
       footprink "whois    $Domaine" "whois.txt" "WHOIS"
       footprink "nslookup $Domaine" "nslookup.txt" "NSLOOKUP"
-      footprink "dig      $Domaine "ANY "dig.txt" "DIG"
+      footprink "dig      $Domaine ANY" "dig.txt" "DIG"
       footprink "traceroute $Domaine" "traceroute.txt" "TRACEROUTE"
       footprink "host -a  $Domaine" "host.txt" "HOST"
       echo "-------------------------------------------------------"

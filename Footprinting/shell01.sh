@@ -38,7 +38,7 @@ footprink() {
         local first_line=$(head -n 1 "$file" 2>/dev/null)
         printf "| %-15s | %-50s |\n" "$label" "$first_line"
     else
-        printf "| %-15s | %-50s |\n" "$label" "❌ Commande non installée"
+        printf "| %-15s | %-50s |\n" "$label" " Commande non installée"
     fi
 }
 
@@ -53,4 +53,4 @@ footprink() {
       footprink "traceroute $Domaine" "traceroute.txt" "TRACEROUTE"
       footprink "host -a  $Domaine" "host.txt" "HOST"
       echo "-------------------------------------------------------"
-      echo "✅ recheche  terminée !  vos information est enregistrées dans : $RechInfos"
+      echo "recheche  terminée !  vos information est enregistrées dans : $RechInfos"

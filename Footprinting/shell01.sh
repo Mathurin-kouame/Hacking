@@ -8,7 +8,7 @@ if [ -z "$Domaine" ]; then
 fi
 
 if ! ping -c 1 -W 2 "$Domaine" &> /dev/null; then
-    echo "❌ Le domaine '$Domaine' n'existe pas ou ne répond pas."
+    echo " Le domaine '$Domaine' n'existe pas ou ne répond pas."
     exit 1
 fi
 
@@ -22,9 +22,9 @@ cmd_exists() {
 }
 
 footprink() {
-    local cmd="$1"
-    local file="$RechInfos/$2"
-    local label="$3"
+     cmd="$1"
+     file="$RechInfos/$2"
+     label="$3"
 
     if [ ! -w "$RechInfos" ]; then
         echo "Les permissions du répertoire $RechInfos ne permettent pas d'écrire dans les fichiers."

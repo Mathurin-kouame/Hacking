@@ -1,0 +1,9 @@
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+Non-authoritative answer:
+Name:	facebook.com
+Address: 157.240.202.35
+Name:	facebook.com
+Address: 2a03:2880:f17b:187:face:b00c:0:25de
+

@@ -1,0 +1,17 @@
+Trying "facebook.com"
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12143
+;; flags: qr rd ra; QUERY: 1, ANSWER: 7, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;facebook.com.			IN	ANY
+
+;; ANSWER SECTION:
+facebook.com.		2282	IN	HTTPS	2 star-mini.fallback.c10r.facebook.com. alpn="h2,h3"
+facebook.com.		2282	IN	HTTPS	1 . alpn="h2,h3"
+facebook.com.		6	IN	A	157.240.202.35
+facebook.com.		8445	IN	NS	d.ns.facebook.com.
+facebook.com.		8445	IN	NS	a.ns.facebook.com.
+facebook.com.		8445	IN	NS	c.ns.facebook.com.
+facebook.com.		8445	IN	NS	b.ns.facebook.com.
+
+Received 200 bytes from 192.168.1.1#53 in 24 ms
